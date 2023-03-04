@@ -113,7 +113,11 @@ def main():
 
     if mode == "I" :
         nodesNumber = int(input())
-        par = input().rstrip("_., ")
+        par = input()
+        parl = par.split(" ")
+        par = ""
+        for i in range(nodesNumber) :
+            par += parl[i] + " "
     
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
