@@ -8,7 +8,6 @@ import numpy as np
 def compute_height(n, parents):
     # Write this function
     max_height = 0
-    
     # # Your code here
     # levels = list(range(n))
     # for i in levels : levels[i] = 0
@@ -114,7 +113,7 @@ def main():
 
     if mode == "I" :
         nodesNumber = int(input())
-        par = input()
+        par = input().rstrip("_., ")
     
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
