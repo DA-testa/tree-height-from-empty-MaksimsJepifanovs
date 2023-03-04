@@ -8,9 +8,66 @@ import numpy as np
 def compute_height(n, parents):
     # Write this function
     max_height = 0
-    # Your code here
+    
+    # # Your code here
+    # levels = list(range(n))
+    # for i in levels : levels[i] = 0
+    # visited = list(range(n))
+    # for i in levels : visited[i] = 0
+    # pointer = 0
+    # for i in range(n) :
+    #     #levels[i] += levels[parents[i]] + 1
+    #     if visited[i] == 1 : continue
+    #     visited[i] = 1
+    #     if parents[i] != -1 :
+    #         if visited[parents[i]] != 1 :
+    #             visited[parents[i]] = 1
+    #             levels[parents[i]] += 1
+
+    #         levels[i] += levels[parents[i]] + 1
+            
+    #         def levIncr(lp) :
+    #             locCh = list(np.where(parents == lp)[0])
+    #             #print(locCh)
+    #             if len(locCh) < 1 : return
+
+    #             for j in range(len(locCh)) :
+    #                 levels[locCh[j]] += 1
+    #                 levIncr(j)
+
+    #         levIncr(i)
+
+    #     else :
+    #         for x in range(len(levels)) :
+    #             if levels[x] < 1 :
+    #                 levels[x] += 1
+
+    #     print(levels)
+
+    # max_height = max(levels) + 1
+
+
+
+
+        # if parents[i] == -1 :
+        #     visited[i] = 1
+        #     for j in range(n) :
+        #         levels[j] += 1
+        #     continue
+
+        # levels[i] += 1
+        # visited[i] = 1
+        
+        # if visited[parents[i]] != 1 :
+        #     visited[parents[i]] = 1
+        #     levels[parents[i]] += 1
+        #     levels[i] += 1
+        
+
+
 
     #root = np.where(parents == -1)[0]
+
 
     prn1 = {}
     prn2 = {}
@@ -20,7 +77,7 @@ def compute_height(n, parents):
             prn1[parents[i]] = -1
         else :
             prn1[parents[i]] = parents[parents[i]]
-        #print(parents[i])
+        
         pass
     max_height += 1
     
