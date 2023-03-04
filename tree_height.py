@@ -118,6 +118,7 @@ def main():
         par = ""
         for i in range(nodesNumber) :
             par += parl[i] + " "
+        print(par)
     
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
