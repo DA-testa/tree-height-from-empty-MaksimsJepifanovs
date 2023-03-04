@@ -111,13 +111,13 @@ def main():
         par = f.readline()
         f.close()
 
-    if mode == "I" :
+    if mode[0] == "I" :
         nodesNumber = int(input())
         par = input()
-        parl = par.split(" ")
-        par = ""
-        for i in range(nodesNumber) :
-            par += parl[i] + " "
+        # parl = par.split(" ")
+        # par = ""
+        # for i in range(nodesNumber) :
+        #     par += parl[i] + " "
         #print(par)
     
     # let user input file name to use, don't allow file names with letter a
